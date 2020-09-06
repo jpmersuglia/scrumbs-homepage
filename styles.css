@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 14%, rgba(134,227,228,1) 100%);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+
+}
+
+.header{
+    display: flex;
+    width: 1650px;
+    height: 2.5em;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .3);
+    padding: 0 1em 0 1em;
+}
+
+.options{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+.options button{
+    padding-left: .5em;
+    padding-right: .5em;
+    /* padding-top: .5em; */
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    color: rgb(128, 128, 128);
+}
+.options button:hover{
+    color: #000;
+}
+
+.header .user{
+    display: flex;
+    align-items: center;
+}
+
+.header .profile{
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.header i{
+    color: #808080;
+    align-items: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5px; /* Location of the box */
+    left: 3em;
+    top: 4em;
+    width: 90%; /* Full width */
+    height: 90%; /* Full height */
+    /* overflow: auto; */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(255, 255, 255); /* Black w/ opacity */
+    border-radius: 1px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, .5);
+    overflow: hidden;
+  }
+
+.modalheader{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .5em;
+    height: 3em;
+    align-items: center;
+}
+.modalheadertitle{
+    margin: 0;
+    align-content: initial;
+    font-weight: normal;
+}
+.modalheaderoptions a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #808080;
+    padding: .5em 1.5em;
+    margin: 0 .1em;
+    /* border: 1px solid #808080; */
+    border-radius: 3px;
+}
+.modalheaderoptions .save{
+    background: rgb(108,182,255);
+    background: linear-gradient(148deg, rgba(108,182,255,1) 0%, rgba(120,132,255,1) 100%);
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.modalheaderoptions .close{
+    color: #b1b1b1;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    margin: 1.5em;
+}
+
+.teams{
+    width: 40%;
+    margin: 1em;
+    padding: 0 1em 1em 6em;
+}
+.teams a{
+    display: block;
+    width: 60%;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #6d6d6d;
+}
+.teams a:hover{
+    color: #333333;
+}
+.teams .primary-btn{
+    color: #6bb4ff;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #dddddd;
+    margin: .2em .01em;
+}
+.teams .primary-btn:hover{
+    color: #3395f8;
+}
+
+.team-content{
+    flex-direction: flex;
+    width: 60%;
+    border-top: 1px solid rgb(223, 223, 223) ;
+}
+.team-content .main-team-header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 13px;
+    padding: 1em 1em;
+}
+.main-team-header h2{
+    font-size: 15px;
+}
+.main-team-header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(187, 22, 77);
+}
+
+.main-team-members{
+    margin: 1em 2em 1em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-team-members .description{
+    font-weight: 100;
+    font-size: 12px;
+    flex: 80%;
+    padding: 0;
+}
+.description h3, p{
+    margin: .3em;
+}
+.main-team-members a{
+    text-decoration: none;
+    color: #6bb4ff;
+    font-weight: bold;
+    font-size: 12px;
+    flex: 20%;
+}
+
+.persons-selection {
+    height: 100%;
+    overflow-y: scroll;
+}
+.persons-selection .person{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 13px;
+    padding: .8em .2em;
+    margin: .1em;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.person input{
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(43, 255, 0);
+    border-radius: 50%;
+}
+
+@media (max-width: 420px){
+    .teams{
+        margin: 1em;
+        padding: 0 1em 1em 0;
+    }
+}
